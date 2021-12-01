@@ -1,0 +1,309 @@
+<html>
+<head>
+    <title>Risha Challenge 1</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        div#container
+        {
+            width: 800px;
+            height: 1000px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            margin: 0 auto;
+            background-image: url("images/bg-1.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        div#box1
+        { 
+            width: 100%;
+            height: inherit;
+            position: absolute;
+            display: inline-block;
+                
+        }
+
+        div#box2
+        {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+                
+        }  
+            
+        div#box3
+        {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            display: inline-block;
+            box-sizing: border-box;
+                
+        }  
+
+        div#box4
+        {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            display: inline-block;
+            box-sizing: border-box;
+                
+        }  
+
+        div#box5
+        {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            display: inline-block;
+            box-sizing: border-box;     
+        }  
+
+        div#box6
+        {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            display: inline-block;
+            box-sizing: border-box;     
+        }  
+
+
+        h1#title 
+        {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 70px;
+            font-weight: 100;
+            letter-spacing: 5px;
+            color: white;
+            z-index: 6;
+        }
+
+        h2#title 
+        {
+            position: absolute;
+            left: 50px;
+            top: 130px;
+            font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            color :lightseagreen;
+            letter-spacing: 12px;
+            z-index: 2;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        h2#title1
+        {
+            position: absolute;
+            margin: 380px 100px 100px 380px;
+            font-size: 45px;
+            font-weight: 200;
+            color :rgb(206, 206, 206);
+            display: inline-block;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h2#title2
+        {
+            position: absolute;
+            margin: 600px 100px 100px 630px;
+            font-size: 45px;
+            font-weight: 200;
+            color :rgb(206, 206, 206);
+            z-index: 6;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h3#title 
+        {
+            position: absolute;
+            left: 50px;
+            top: 170px;
+            font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            color :rgb(21, 96, 143);
+            z-index: 6;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        h4#title 
+        {
+            position: absolute;
+            margin: 580px 0px 0px 50px;
+            font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 23px;
+            color :lightseagreen;
+            letter-spacing: 15px;
+            z-index: 6;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        h5#title 
+        {
+            position: absolute;
+            margin: 620px 500px 0px 50px;
+            font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+            font-weight: 200;
+            color :rgb(168, 168, 168);
+            z-index: 6;
+        }
+
+        h6
+        {
+            position: absolute;
+            margin: 950px 0px 0px 50px;
+            font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color :lightseagreen;
+            z-index: 6;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+
+        .hexagon {
+            box-sizing: border-box;
+            position: relative;
+            width: 400px; 
+            height: 300px;
+            background-color: #FFFF33;
+            padding: 3px 2px 3px 2px;
+            margin: 38px 10px 10px 470px;
+            transform: rotate(50deg);
+            display: inline-block;
+            }
+
+
+            .hexagon:before,
+            .hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 200px solid transparent;
+            border-right: 200px solid transparent;
+            }
+
+            .hexagon:before {
+            bottom: 100%;
+            border-bottom: 95px solid #FFFF33;
+            }
+
+            .hexagon:after {
+                top: 100%;
+                width: 0;
+                border-top: 95px solid #FFFF33;
+            }
+
+            .hexagon2 {
+                position: relative;
+                width: 280px; 
+                height: 173.21px;
+                background-color: #ffffff;
+                margin: 580px 0px 0px 560px;
+                transform: rotate(-18deg);
+            }
+
+            .hexagon2:before,
+            .hexagon2:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                border-left: 150px solid transparent;
+                border-right: 150px solid transparent;
+            }
+
+            .hexagon2:before {
+                bottom: 100%;
+                border-bottom: 86.60px solid #ffffff;
+            }
+
+            .hexagon2:after {
+                top: 100%;
+                width: 0;
+                border-top: 86.60px solid #ffffff;
+            }
+
+            .hexagon3 {
+                position: relative;
+                width: 300px; 
+                height: 173.21px;
+                background-color: #ffffff;
+                margin: 350px 0px 0px 300px;
+                transform: rotate(-18deg);
+            }
+
+            .hexagon3:before,
+            .hexagon3:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                border-left: 150px solid transparent;
+                border-right: 150px solid transparent;
+            }
+
+            .hexagon3:before {
+                bottom: 100%;
+                border-bottom: 86.60px solid #ffffff;
+            }
+
+            .hexagon3:after {
+                top: 100%;
+                width: 0;
+                border-top: 86.60px solid #ffffff;
+            }
+
+    </style>
+</head>
+    <body>
+        <div id="container">
+            <div id="box1">
+                <div class="hexagon"></div>
+            </div>
+
+            <div id="box2">
+                <h1 id="title">HEADLINE</h1>
+                <h2 id="title">SPACE HERE</h2>
+                <h3 id="title">Lorem Ipsum. Pellentesque id neque</h3>
+            </div>
+
+            <div id="box3">
+                <div class="hexagon2"></div>
+            </div>
+
+            <div id="box4">
+                <div class="hexagon3"></div>
+            </div>
+
+            <div id="box5">
+                <h2 id="title1">YOUR<br>IMAGE</h2>
+                <h2 id="title2">YOUR<br>IMAGE</h2>
+            </div>  
+
+            <div id="box6">
+                <h4 id="title">TITLE TEXT</h4>
+                <h5 id="title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5>
+                <h6>www.companyname.com</h6>
+            </div>  
+        </div>
+    </body>
+</html>
